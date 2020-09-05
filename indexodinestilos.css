@@ -1,0 +1,577 @@
+body{
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+.header1 {
+    display: block;
+    flex-direction: row;
+    background-color: #092c4ef8;
+    height: 5vh;
+    width: 100%;
+    z-index: 100;
+    padding-left: 10%;
+    margin-top: 95vh;
+    position:fixed;
+}
+/*
+nav{
+    background-color: rgba(0, 0, 0, 0.925);
+    height: 9vh;
+    margin-top: -9vh;
+    position: fixed;
+    z-index: 300;
+} */
+
+
+/* header responsive*/
+
+.header {
+  background-color: black;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  margin-top: 0px;
+  width: 100%;
+  z-index: 3;
+  height: 9%;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: black;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  /* border-right: 1px solid #f4f4f4; */
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&   heder responsive   &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primero {
+    height: auto;
+    overflow: visible;
+    width: 100%;
+    padding-top: 8vh;
+    background-repeat: repeat;
+    background-size: 50px;
+    background-blend-mode: color-burn
+}
+
+.principal {
+    transition: 4s;
+}
+
+.second {
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 100%;
+    background-color: #104547;
+    height: 100%;
+    padding-bottom:2vh ;
+}
+
+.fila1{
+  width: 100%;
+  align-items: center;
+  padding: 5vh
+}
+
+.fila2{
+
+  text-align: left;
+  width:350px;
+  height: 100%;
+  margin: 5% 1% 5% 1%;
+  padding-bottom: 5vh
+}
+.parrafo{
+  font-size: 120%;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 300;
+
+  color: white;
+}
+.subtitulo{
+text-align: center;
+  color: white;
+  font-size: 120%;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 400;
+  margin-top:-5vh
+
+}
+.titulo{
+text-align: center;
+  color: white;
+  font-size: 300%;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 500;
+  margin: 0
+
+}
+.titulo1{
+  text-align: center;
+    color: #19426f;
+    font-size: 150%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 300%;
+
+}
+
+.logo1 {
+    width: auto;
+    height: 7.2vh;
+    margin-left: 11vw;
+    margin-top:1vh;
+}
+
+.logoletra {
+    height: 4.3vh;
+    width: auto;
+    z-index: 200;
+    margin-top:1vh;
+}
+
+.redes {
+    width: auto;
+    height: 3vh;
+    margin: 1vh;
+}
+
+.formula {
+    display: flex;
+    flex-direction: column;
+}
+
+.paginas {
+    display: flex;
+    flex-direction: column;
+    background-color: #c0d7bb;
+    padding-bottom: 5%;
+
+
+}
+
+ .btn {
+    background-image: url(imagenes/wsp.png);
+    background-size: 100%;
+
+}
+
+
+/*%%%%%%%%%%%%%%%%%%%NUESTRO EQUIPO%%%%%%%%%%%%%%%%%%%%%*/
+
+.equipo {
+    /* height: 150%; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    color: black;
+    /*padding: 0px 100px 40px 100px;*/
+    text-align: center;
+    padding-bottom: 30vh;
+}
+
+.miembro {
+  width: 200px;
+  line-height: 2%;
+  font-size: 83%;
+}
+.imgmiembro{
+  height: 100%;
+}
+.miembro .nombre{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-style: bold;
+  font-size: 120%;
+}
+
+/*%%%%%%%%%%%%%%%%%%%PRODUCTOS%%%%%%%%%%%%%%%%%%%%%*/
+.tituloproductos{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+
+  font-size: 120%;
+}
+.slider2 {
+    justify-content: center;
+    width: 100%;
+}
+
+.productos {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;/*Mejora tus ventas ofrece tus productos a toda partes del mundo donde llegue internet.*/
+    justify-content: center;
+    color: black;
+    margin: 30px 30px 80px 30px;
+    text-align: center;
+}
+
+img {
+    width: 10vmin;
+    height: 10vmin;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.productos input {
+    display: none;
+}
+
+.img1 {
+    display: block;
+    padding: 15px;
+    background: white;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+
+.img1:hover {
+    background: white;
+}
+
+.contenido {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    transition: all 0.5s;
+    width: 200px;
+}
+
+.productos input:checked~.contenido {
+    height: auto;
+    margin: 15px 0;
+}
+
+p {
+    color: black;
+}
+
+h5 {
+    color: black;
+}
+
+
+/*%%%%%%%%%%%%%%%FORMULARIO%%%%%%%%%%%%%%%%%%%%%%%*/
+
+.formula {
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+
+.wrap {
+    width: 90%;
+    max-width: 500px;
+    padding: 40px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0px 0px 3px grey;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 0px;
+    color: #19426f;
+}
+
+.contenedor-formulario {
+    width: 100%;
+    color: #f2f2f2;
+    padding: 20px;
+}
+
+.contenedor-formulario .formulario {
+    width: 100%;
+    margin: auto;
+}
+
+.contenedor-formulario .formulario .input-group {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.contenedor-formulario .formulario .input-group input[type="text"],
+.contenedor-formulario .formulario .input-group input[type="email"],
+.contenedor-formulario .formulario .input-group input[type="tel"] {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #19426f;
+    width: 100%;
+    outline: none;
+    padding: 15px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #BBDEFB;
+}
+
+.contenedor-formulario .formulario .input-group input[type="text"]:focus,
+.contenedor-formulario .formulario .input-group input[type="text"]:active,
+.contenedor-formulario .formulario .input-group input[type="email"]:focus,
+.contenedor-formulario .formulario .input-group input[type="email"]:active,
+.contenedor-formulario .formulario .input-group input[type="tel"]:focus,
+.contenedor-formulario .formulario .input-group input[type="tel"]:active {
+    outline: none;
+    border-bottom: 2px solid #19426f;
+}
+
+.contenedor-formulario .formulario .input-group input[type="text"].error,
+.contenedor-formulario .formulario .input-group input[type="email"].error,
+.contenedor-formulario .formulario .input-group input[type="tel"].error {
+    border-bottom: 2px solid #D32F2F;
+}
+
+.contenedor-formulario .formulario .input-group input[type="text"].error+label,
+.contenedor-formulario .formulario .input-group input[type="email"].error+label,
+.contenedor-formulario .formulario .input-group input[type="tel"].error+label {
+    color: #D32F2F;
+}
+
+.contenedor-formulario .formulario .input-group label {
+    color: #19426f;
+}
+
+.contenedor-formulario .formulario .input-group label.label {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 16px;
+    position: absolute;
+    top: 16px;
+    left: 0;
+}
+
+.contenedor-formulario .formulario .input-group label.label.active {
+    top: -12px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #B6B6B6;
+}
+
+.contenedor-formulario .formulario .input-group.checkbox label,
+.contenedor-formulario .formulario .input-group.radio label {
+    display: inline-block;
+    cursor: pointer;
+    color: #19426f;
+    position: relative;
+    padding: 5px 15px 5px 51px;
+    font-size: 1em;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.contenedor-formulario .formulario .input-group.checkbox label:hover,
+.contenedor-formulario .formulario .input-group.radio label:hover {
+    background: #bbdefb;
+}
+
+.contenedor-formulario .formulario .input-group.checkbox label:before,
+.contenedor-formulario .formulario .input-group.radio label:before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 15px;
+    border-radius: 50%;
+    background: none;
+    border: 2px solid #19426f;
+}
+
+.contenedor-formulario .formulario .input-group.error label {
+    color: #D32F2F;
+}
+
+.contenedor-formulario .formulario .input-group.error label:hover {
+    background: rgba(211, 47, 47, 0.2);
+}
+
+.contenedor-formulario .formulario .input-group.error label:before {
+    border: 2px solid #D32F2F;
+}
+
+.contenedor-formulario .formulario .input-group.radio input[type="radio"] {
+    display: none;
+}
+
+.contenedor-formulario .formulario .input-group.radio input[type="radio"]:checked+label:before {
+    display: none;
+}
+
+.contenedor-formulario .formulario .input-group.radio input[type="radio"]:checked+label {
+    padding: 5px 15px;
+    background: #19426f;
+    border-radius: 2px;
+    color: #f2f2f2;
+}
+
+.contenedor-formulario .formulario .input-group.checkbox label:before {
+    border-radius: 3px;
+}
+
+.contenedor-formulario .formulario .input-group.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.contenedor-formulario .formulario .input-group.checkbox input[type="checkbox"]:checked+label:before {
+    display: none;
+}
+
+.contenedor-formulario .formulario .input-group.checkbox input[type="checkbox"]:checked+label {
+    background: #19426f;
+    color: #f2f2f2;
+    padding: 5px 15px;
+}
+
+.contenedor-formulario .formulario input[type="submit"] {
+    background: #19426f;
+    border-radius: 1px;
+    border: 2px solid #f2f2f2;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Roboto";
+    font-size: 16px;
+    padding: 15px;
+    width: 100%;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.contenedor-formulario .formulario input[type="submit"]:hover {
+    background: #1976D2;
+}
